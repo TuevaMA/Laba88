@@ -32,7 +32,7 @@ class MusicScreen extends StatelessWidget{
                   alignment: Alignment.center,
                   padding: const EdgeInsets.only(top: 35.0),
                   child: SizedBox(width: 200,height: 200,
-                      child: Image.network('https://images-na.ssl-images-amazon.com/images/I/71NXBmQ5v1L._SL1200_.jpg')
+                      child: Image.network('https://e-cdn-images.dzcdn.net/images/cover/8b6cf17c815d0170272c32c9a80e8900/264x264-000000-80-0-0.jpg')
                   )
               ),
 

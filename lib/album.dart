@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:laba8/album_d.dart';
 
+
 void main(){runApp(const MyApp());
 }
 
@@ -51,9 +52,9 @@ class _AlbumsScreenState extends State<AlbumsScreen>{
               children: <Widget>[
                 Padding(padding: const EdgeInsets.only(top: 15.0,right: 25.0,left: 25.0),
                     child: ListTile(
-                        leading: const CircleAvatar(backgroundImage: NetworkImage('https://e-cdn-images.dzcdn.net/images/cover/8b6cf17c815d0170272c32c9a80e8900/264x264-000000-80-0-0.jpg')),
+                        leading: const CircleAvatar(backgroundImage: AssetImage('image/night.jpg')),
                         title: const Text('nights'),
-                        subtitle: const Text('By Индия'),
+                        subtitle: const Text('By Smash'),
                         trailing: const Icon(Icons.audiotrack),
                         onTap: () {
                           Navigator.push(context,
@@ -66,14 +67,14 @@ class _AlbumsScreenState extends State<AlbumsScreen>{
 
                 Padding(padding: const EdgeInsets.only(top: 15.0,right: 25.0,left: 25.0),
                     child: ListTile(
-                        leading: const CircleAvatar(backgroundColor: Colors.purpleAccent),
-                        title: const Text('Album name 2'),
-                        subtitle: const Text('Group name 2'),
+                        leading: const CircleAvatar(backgroundImage: AssetImage('image/party.jpg')),
+                        title: const Text('Hangout'),
+                        subtitle: const Text('Party-goer'),
                         trailing: const Icon(Icons.audiotrack),
                         onTap: () {
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context)=> AlbumDetailScreen(
-                                  nameAlbum: _nameAlbum='Album name 2'
+                                  nameAlbum: _nameAlbum='Hangout'
                               )));
                         }
                     )
@@ -81,14 +82,14 @@ class _AlbumsScreenState extends State<AlbumsScreen>{
 
                 Padding(padding: const EdgeInsets.only(top: 15.0,right: 25.0,left: 25.0),
                     child: ListTile(
-                        leading: const CircleAvatar(backgroundColor: Colors.purpleAccent),
-                        title: const Text('Album name 3'),
-                        subtitle: const Text('Group name 3'),
+                        leading: const CircleAvatar(backgroundImage: AssetImage('image/slep.jpg')),
+                        title: const Text('nerves'),
+                        subtitle: const Text('reassuringly'),
                         trailing: const Icon(Icons.audiotrack),
                         onTap: () {
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context)=> AlbumDetailScreen(
-                                  nameAlbum: _nameAlbum='Album name 3'
+                                  nameAlbum: _nameAlbum='nerves'
                               )));
                         }
                     )
